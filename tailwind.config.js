@@ -18,6 +18,9 @@ module.exports = {
         'input-red': '#D22947',
         'smTxt': '#616066',
       },
+      backgroundImage: {
+        'bg-header': "url('../assets/images/bg_full.png')",
+      },
     },
   },
   plugins: [],

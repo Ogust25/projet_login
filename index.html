@@ -11,28 +11,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/" type="image/x-icon">
 </head>
-<body>
-    <div class="w-screen h-screen bg-bg-main text-white font-manrope">
-        <header>
-            <h1 class="font-pressStart text-xl font-normal">Binary</h1>
-            <div>
-                <p class="font-semibold">We are</p>
-                <p class="text-2xl font-medium">Invite online right now.</p>
-                <p class="text-sm font-medium">10 people have joined our team.</p>
-                <p class="text-sm font-medium">We invite you to join the tribe.</p>
+<body class="flex justify-center w-screen h-screen bg-bg-main text-white font-manrope">
+    <div class="w-5/6 lg:flex lg:w-full lg:h-full">
+        <header class="lg:w-1/2 lg:bg-bg-header lg:rounded-tr-3xl lg:rounded-br-3xl lg:flex lg:justify-center lg:items-center">
+            <div class="hidden lg:flex lg:rounded-lg">
+                <h1 class="font-pressStart text-xl font-normal my-8">Binary</h1>
+                <div>
+                    <p class="font-semibold">We are</p>
+                    <p class=" my-3 text-2xl font-medium">Invite online right now.</p>
+                    <p class="text-sm font-medium">10 people have joined our team.</p>
+                    <p class="text-sm font-medium">We invite you to join the tribe.</p>
+                </div>
             </div>
         </header>
-        <main>
-            <form>
-                <label class="font-bold" for="email">Email address</label>
-                <input type="email" name="email" id="email">
-                <label class="font-bold" for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <button class="bg-gradient-to-r from-action-l to-action-r font-bold text-lg" type="submit">Sign up</button>
+        <main class="flex flex-col lg:w-1/2 lg:justify-center lg:items-center">
+            <form class="flex flex-col mt-8 lg:w-1/2">
+                <p class="hidden lg:flex lg:text-5xl lg:font-bold lg:mb-20">Sign up</p>
+                <label class="font-bold lg:text-xl" for="email">Email address</label>
+                <input class="mt-5 mb-8 h-10 bg-input border-2 border-input-b rounded-lg lg:h-16" type="email" name="email" id="email">
+                <label class="font-bold lg:text-xl" for="password">Password</label>
+                <input class="mt-5 mb-10 h-10 bg-input border-2 border-input-b rounded-lg lg:h-16" type="password" name="password" id="password">
+                <button class="h-10 rounded-lg bg-gradient-to-r from-action-l to-action-r font-bold text-lg lg:h-16" type="submit">Sign up</button>
             </form>
-            <div>
-                <p class="text-sm font-normal text-smTxt">Already have an account ? <span class="font-bold text-white">Sign in</span></p>
+            <div class="flex flex-row-reverse mt-32 lg:w-1/2 lg:mt-24 lg:pt-24 lg:border-t lg:border-input-b">
+                <p class="text-sm font-normal text-smTxt lg:text-xl">Already have an account ? <span class="font-bold text-white">Sign in</span></p>
             </div>
         </main>
     </div>
