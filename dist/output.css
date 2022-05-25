@@ -468,6 +468,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -482,12 +490,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mb-10 {
@@ -496,6 +504,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-32 {
   margin-top: 8rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -570,10 +582,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #393DDC;
 }
 
-.p-5 {
-  padding: 1.25rem;
-}
-
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -632,13 +640,14 @@ h1{
   font-family: 'Press Start 2P', 'sans-serif';
 }
 
+.invalid\:border-input-red:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(210 41 71 / var(--tw-border-opacity));
+}
+
 .hover\:from-action-active-l:hover {
   --tw-gradient-from: #A9AFFF;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(169 175 255 / 0));
-}
-
-.hover\:to-action-r:hover {
-  --tw-gradient-to: #393DDC;
 }
 
 .hover\:to-action-active-r:hover {
