@@ -570,12 +570,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #393DDC;
 }
 
-.font-manrope {
-  font-family: Manrope, sans-serif;
+.p-5 {
+  padding: 1.25rem;
 }
 
-.font-pressStart {
-  font-family: Press Start 2P, cursive;
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.font-manrope {
+  font-family: Manrope, sans-serif;
 }
 
 .text-xl {
@@ -624,7 +628,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(97 96 102 / var(--tw-text-opacity));
 }
 
+h1{
+  font-family: 'Press Start 2P', 'sans-serif';
+}
+
+.hover\:from-action-active-l:hover {
+  --tw-gradient-from: #A9AFFF;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(169 175 255 / 0));
+}
+
+.hover\:to-action-r:hover {
+  --tw-gradient-to: #393DDC;
+}
+
+.hover\:to-action-active-r:hover {
+  --tw-gradient-to: #4E52F8;
+}
+
+@media (min-width: 640px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .lg\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -641,6 +677,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 100%;
   }
 
+  .lg\:h-5\/6 {
+    height: 83.333333%;
+  }
+
   .lg\:h-16 {
     height: 4rem;
   }
@@ -653,6 +693,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
+  .lg\:w-11\/12 {
+    width: 91.666667%;
+  }
+
+  .lg\:w-fit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
@@ -661,8 +719,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: center;
   }
 
-  .lg\:rounded-lg {
-    border-radius: 0.5rem;
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:rounded-3xl {
+    border-radius: 1.5rem;
   }
 
   .lg\:rounded-tr-3xl {
@@ -682,17 +744,46 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-color: rgb(52 51 60 / var(--tw-border-opacity));
   }
 
+  .lg\:bg-title {
+    --tw-bg-opacity: 1;
+    background-color: rgb(115 119 213 / var(--tw-bg-opacity));
+  }
+
   .lg\:bg-bg-header {
     background-image: url('../assets/images/bg_full.png');
+  }
+
+  .lg\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:pt-24 {
     padding-top: 6rem;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-xl {
@@ -700,7 +791,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:font-bold {
     font-weight: 700;
+  }
+
+  .lg\:backdrop-blur-3xl {
+    --tw-backdrop-blur: blur(64px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-5\/6 {
+    height: 83.333333%;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 }

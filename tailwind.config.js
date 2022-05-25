@@ -7,7 +7,6 @@ module.exports = {
     extend: {
       fontFamily: {
         'manrope': ['Manrope', 'sans-serif'],
-        'pressStart': ['Press Start 2P', 'cursive'],
       },
       colors: {
         'bg-main': '#191720',
@@ -17,6 +16,9 @@ module.exports = {
         'input-b': '#34333C',
         'input-red': '#D22947',
         'smTxt': '#616066',
+        'title': '#7377D5',
+        'action-active-l': '#A9AFFF',
+        'action-active-r': '#4E52F8',
       },
       backgroundImage: {
         'bg-header': "url('../assets/images/bg_full.png')",

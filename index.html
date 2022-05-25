@@ -10,30 +10,34 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/" type="image/x-icon">
 </head>
 <body class="flex justify-center w-screen h-screen bg-bg-main text-white font-manrope">
-    <div class="w-5/6 lg:flex lg:w-full lg:h-full">
+    <div class="w-5/6 sm:w-1/2 lg:flex lg:w-full lg:h-full">
         <header class="lg:w-1/2 lg:bg-bg-header lg:rounded-tr-3xl lg:rounded-br-3xl lg:flex lg:justify-center lg:items-center">
-            <div class="hidden lg:flex lg:rounded-lg">
-                <h1 class="font-pressStart text-xl font-normal my-8">Binary</h1>
+            <div class="lg:flex lg:flex-col lg:justify-between lg:rounded-3xl lg:backdrop-blur-3xl lg:w-11/12 lg:h-5/6 xl:w-2/3 xl:h-5/6 lg:px-16 lg:py-8">
                 <div>
-                    <p class="font-semibold">We are</p>
-                    <p class=" my-3 text-2xl font-medium">Invite online right now.</p>
-                    <p class="text-sm font-medium">10 people have joined our team.</p>
-                    <p class="text-sm font-medium">We invite you to join the tribe.</p>
+                    <h1 class="text-xl font-normal my-8 lg:text-2xl lg:bg-title lg:p-5 lg:w-fit">Binary</h1>
+                    <div class="lg:mt-16 lg:mb-20">
+                        <p class="font-semibold lg:text-3xl">We are</p>
+                        <p class=" my-3 text-2xl font-medium lg:text-4xl lg:my-10">Invite online right now.</p>
+                        <p class="text-sm font-medium lg:text-xl">10 people have joined our team.</p>
+                        <p class="text-sm font-medium lg:text-xl">We invite you to join the tribe.</p>
+                    </div>
                 </div>
+                <p class="hidden lg:flex lg:font-bold lg:text-xl">Already have an account ? Sign in</p>
             </div>
         </header>
         <main class="flex flex-col lg:w-1/2 lg:justify-center lg:items-center">
-            <form class="flex flex-col mt-8 lg:w-1/2">
+            <form class="flex flex-col mt-8 lg:w-2/3 xl:w-1/2">
                 <p class="hidden lg:flex lg:text-5xl lg:font-bold lg:mb-20">Sign up</p>
                 <label class="font-bold lg:text-xl" for="email">Email address</label>
-                <input class="mt-5 mb-8 h-10 bg-input border-2 border-input-b rounded-lg lg:h-16" type="email" name="email" id="email">
+                <input class="pl-5 mt-5 mb-8 h-10 bg-input border-2 border-input-b rounded-lg lg:h-16" type="email" name="email" id="email">
                 <label class="font-bold lg:text-xl" for="password">Password</label>
-                <input class="mt-5 mb-10 h-10 bg-input border-2 border-input-b rounded-lg lg:h-16" type="password" name="password" id="password">
-                <button class="h-10 rounded-lg bg-gradient-to-r from-action-l to-action-r font-bold text-lg lg:h-16" type="submit">Sign up</button>
+                <input class="pl-5 mt-5 mb-10 h-10 bg-input border-2 border-input-b rounded-lg lg:h-16" type="password" name="password" id="password">
+                <button class="h-10 rounded-lg bg-gradient-to-r from-action-l to-action-r hover:from-action-active-l hover:to-action-active-r font-bold text-lg lg:h-16" type="submit">Sign up</button>
             </form>
             <div class="flex flex-row-reverse mt-32 lg:w-1/2 lg:mt-24 lg:pt-24 lg:border-t lg:border-input-b">
                 <p class="text-sm font-normal text-smTxt lg:text-xl">Already have an account ? <span class="font-bold text-white">Sign in</span></p>
